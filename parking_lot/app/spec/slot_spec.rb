@@ -51,8 +51,8 @@ describe Slot do
       end
 
       it {expect(@slot.car).to be_instance_of(Car)}
-      it {expect(@slot.car.registration_number).to eq("KA-01-HH-1234")}
-      it {expect(@slot.car.color).to eq("White")}
+      it {expect(@slot.car.registration_number.upcase).to eq("KA-01-HH-1234")}
+      it {expect(@slot.car.color.capitalize).to eq("White")}
 
     end
   end

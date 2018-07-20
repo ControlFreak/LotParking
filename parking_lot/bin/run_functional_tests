@@ -5,3 +5,4 @@ functional_spec_dir = File.join(project_bin_dir, '..', 'functional_spec')
 cmd = "cd #{functional_spec_dir}; bundle exec rake spec:functional"
 puts cmd
 system cmd
+system "pwd"

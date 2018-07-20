@@ -1,6 +1,4 @@
-# Add script to run program here.
-# Complete bin/setup so that after it is
-# run, bin/parking_lot can be used to launch
-# it.
+#!/usr/bin/env ruby
+require './app/lib/parking_lot_handler'
 
-
+ParkingLotHandler.new.run ARGV.first

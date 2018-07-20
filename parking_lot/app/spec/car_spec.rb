@@ -18,8 +18,8 @@ describe Car do
         @car = Car.new("KA-01-HH-1234", "White")
       end
       it {expect(@car).to be_instance_of(Car) }
-      it {expect(@car.registration_number).to eq("KA-01-HH-1234")}
-      it {expect(@car.color).to eq("White")}
+      it {expect(@car.registration_number.upcase).to eq("KA-01-HH-1234")}
+      it {expect(@car.color.capitalize).to eq("White")}
     end
   end
 
