@@ -13,7 +13,7 @@ class Slot < Base
   def park(registration_number, color)
     raise ArgumentError unless registration_number.is_a?(String) || color.is_a?(String)
     raise StandardError.new(Slot::SLOT_OCCUPIED_MESSAGE) if self.car
-
+    self.car = Car.new(registration_number, color)
   end
 
   def unpark
