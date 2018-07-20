@@ -5,3 +5,9 @@
 #
 # After this is run, bin/parking_lot
 # should Just Work.
+
+
+# install ruby 2.4.1 with
+# create gemset
+# install bundler
+# do bundle install
