@@ -90,10 +90,6 @@ describe ParkingLot do
       it {expect(@parking_lot).to respond_to(:status)}
     end
 
-    context "when no car is park" do
-      it {expect(@parking_lot.status).to eq($stdout.puts ParkingLot::PARKING_EMPTY_MESSAGE)}
-    end
-
 #     context "when cars are parked" do
 #       it "should return slot with car registration number and color in tablular format" do
 #         @parking_lot.park("KA-01-HH-1234", "White")
