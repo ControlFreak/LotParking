@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc960741-c722-4740-9cc9-4e64822db531" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/parking_lot/app/lib/parking_lot_handler.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/parking_lot/app/gemfile" afterPath="$PROJECT_DIR$/parking_lot/app/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parking_lot/app/lib/base.rb" afterPath="$PROJECT_DIR$/parking_lot/app/lib/base.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parking_lot/app/lib/parking_lot.rb" afterPath="$PROJECT_DIR$/parking_lot/app/lib/parking_lot.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parking_lot/app/spec/car_spec.rb" afterPath="$PROJECT_DIR$/parking_lot/app/spec/car_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parking_lot/app/spec/slot_spec.rb" afterPath="$PROJECT_DIR$/parking_lot/app/spec/slot_spec.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parking_lot/app/lib/parking_lot_handler.rb" afterPath="$PROJECT_DIR$/parking_lot/app/lib/parking_lot_handler.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parking_lot/bin/parking_lot" afterPath="$PROJECT_DIR$/parking_lot/bin/parking_lot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parking_lot/bin/run_functional_tests" afterPath="$PROJECT_DIR$/parking_lot/bin/run_functional_tests" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parking_lot/bin/setup" afterPath="$PROJECT_DIR$/parking_lot/bin/setup" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,31 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="parking_lot_spec.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/parking_lot/app/spec/parking_lot_spec.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-640">
-              <caret line="94" column="22" lean-forward="false" selection-start-line="94" selection-start-column="22" selection-end-line="94" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="slot_spec.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/parking_lot/app/spec/slot_spec.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="54" column="44" lean-forward="false" selection-start-line="54" selection-start-column="44" selection-end-line="54" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="parking_lot_handler.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/parking_lot/app/lib/parking_lot_handler.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+            <state relative-caret-position="350">
+              <caret line="34" column="57" lean-forward="false" selection-start-line="34" selection-start-column="57" selection-end-line="34" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -64,11 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="setup" pinned="false" current-in-tab="true">
+      <file leaf-file-name="setup" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/parking_lot/bin/setup">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="515">
-              <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+            <state relative-caret-position="410">
+              <caret line="30" column="21" lean-forward="true" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -77,18 +52,38 @@
       <file leaf-file-name="parking_lot.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/parking_lot/app/lib/parking_lot.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="395">
-              <caret line="63" column="39" lean-forward="false" selection-start-line="63" selection-start-column="39" selection-end-line="63" selection-end-column="39" />
+            <state relative-caret-position="362">
+              <caret line="54" column="64" lean-forward="true" selection-start-line="54" selection-start-column="64" selection-end-line="54" selection-end-column="64" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="car_spec.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/parking_lot/app/spec/car_spec.rb">
+      <file leaf-file-name="file_input.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/parking_lot/functional_spec/fixtures/file_input.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="47" lean-forward="true" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
+            <state relative-caret-position="165">
+              <caret line="11" column="47" lean-forward="false" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="parking_lot" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/parking_lot/bin/parking_lot">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="10" lean-forward="false" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/parking_lot/app/lib/base.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="2" lean-forward="false" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -153,12 +148,8 @@
         <option value="$PROJECT_DIR$/parking_lot/app/config/constant.rb" />
         <option value="$PROJECT_DIR$/parking_lot/app/lib/car.rb" />
         <option value="$PROJECT_DIR$/parking_lot/app/lib/slot.rb" />
-        <option value="$PROJECT_DIR$/parking_lot/app/lib/base.rb" />
         <option value="$PROJECT_DIR$/parking_lot/app/lib/parking.rb" />
-        <option value="$PROJECT_DIR$/parking_lot/app/lib/parking_lot.rb" />
-        <option value="$PROJECT_DIR$/parking_lot/app/lib/parking_lot_handler.rb" />
         <option value="$PROJECT_DIR$/parking_lot/bin/setup.example" />
-        <option value="$PROJECT_DIR$/parking_lot/bin/parking_lot" />
         <option value="$PROJECT_DIR$/parking_lot/app/spec/parking_lot_spec.rb" />
         <option value="$PROJECT_DIR$/parking_lot/functional_spec/spec/end_to_end_spec.rb" />
         <option value="$PROJECT_DIR$/parking_lot/app/spec/car_spec.rb" />
@@ -166,6 +157,11 @@
         <option value="$PROJECT_DIR$/parking_lot/bin/run_functional_tests" />
         <option value="$PROJECT_DIR$/parking_lot/app/Gemfile" />
         <option value="$PROJECT_DIR$/parking_lot/bin/setup" />
+        <option value="$PROJECT_DIR$/parking_lot/bin/parking_lot" />
+        <option value="$PROJECT_DIR$/parking_lot/app/lib/base.rb" />
+        <option value="$PROJECT_DIR$/parking_lot/app/lib/parking_lot_handler.rb" />
+        <option value="$PROJECT_DIR$/parking_lot/app/lib/parking_lot.rb" />
+        <option value="$PROJECT_DIR$/parking_lot/functional_spec/fixtures/file_input.txt" />
       </list>
     </option>
   </component>
@@ -239,6 +235,13 @@
               <item name="parking-lot-1.3.0" type="462c0819:PsiDirectoryNode" />
               <item name="parking_lot" type="462c0819:PsiDirectoryNode" />
               <item name="functional_spec" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parking-lot-1.3.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="parking-lot-1.3.0" type="462c0819:PsiDirectoryNode" />
+              <item name="parking_lot" type="462c0819:PsiDirectoryNode" />
+              <item name="functional_spec" type="462c0819:PsiDirectoryNode" />
+              <item name="fixtures" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="parking-lot-1.3.0" type="b2602c69:ProjectViewProjectNode" />
@@ -322,12 +325,12 @@
       <updated>1532022586853</updated>
       <workItem from="1532022588552" duration="58000" />
       <workItem from="1532022697985" duration="20382000" />
-      <workItem from="1532093292117" duration="10523000" />
+      <workItem from="1532093292117" duration="13355000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30963000" />
+    <option name="totallyTimeSpent" value="33795000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -437,13 +440,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/parking_lot/functional_spec/fixtures/file_input.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="45" lean-forward="false" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/parking_lot/app/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -482,14 +478,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="65" lean-forward="false" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/parking_lot/app/lib/base.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="43" lean-forward="false" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
           <folding />
         </state>
       </provider>
@@ -558,34 +546,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/parking_lot/bin/parking_lot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="36" lean-forward="true" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/parking_lot/app/spec/parking_lot_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-640">
           <caret line="94" column="22" lean-forward="false" selection-start-line="94" selection-start-column="22" selection-end-line="94" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/parking_lot/app/lib/parking_lot.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="63" column="39" lean-forward="false" selection-start-line="63" selection-start-column="39" selection-end-line="63" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/parking_lot/app/lib/parking_lot_handler.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
           <folding />
         </state>
       </provider>
@@ -640,8 +604,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/parking_lot/bin/setup">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+        <state relative-caret-position="410">
+          <caret line="30" column="21" lean-forward="true" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parking_lot/bin/parking_lot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="10" lean-forward="false" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parking_lot/app/lib/parking_lot_handler.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="34" column="57" lean-forward="false" selection-start-line="34" selection-start-column="57" selection-end-line="34" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parking_lot/app/lib/base.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="2" lean-forward="false" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parking_lot/app/lib/parking_lot.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="54" column="64" lean-forward="true" selection-start-line="54" selection-start-column="64" selection-end-line="54" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parking_lot/functional_spec/fixtures/file_input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="47" lean-forward="false" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="47" />
           <folding />
         </state>
       </provider>

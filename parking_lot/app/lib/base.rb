@@ -10,5 +10,6 @@ class Base
   INVALID_ARGUMENT = "Invalid Argument, expect the argument to be #type#"
   SLOT_OCCUPIED_MESSAGE = "Slot already occupied"
   CAR_ALREADY_PARKED = "Car already parked"
+  PARKING_NOT_FOUND = "Parking not found"
 
 end

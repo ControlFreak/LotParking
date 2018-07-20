@@ -40,21 +40,21 @@ class ParkingLot < Base
   def registration_numbers_for_cars_with_colour color
     raise ArgumentError unless color.is_a?(String)
     cars = slots.collect {|slot| slot.car.registration_number.upcase if slot.car && slot.car.color == color.downcase }.compact
-    return puts NO_CAR_FOUND_MESSAGE unless cars
+    return puts ParkingLot::NO_CAR_FOUND_MESSAGE if cars.empty?
     puts cars.join(", ")
   end
 
   def slot_numbers_for_cars_with_colour color
     raise ArgumentError unless color.is_a?(String)
     cars = slots.collect {|slot| slot.id if slot.car && slot.car.color == color.downcase }.compact
-    return puts NO_CAR_FOUND_MESSAGE unless cars
+    return puts ParkingLot::NO_CAR_FOUND_MESSAGE if cars.empty?
     puts cars.join(", ")
   end
 
   def slot_number_for_registration_number registration_number
     raise ArgumentError unless registration_number.is_a?(String)
     cars = slots.collect {|slot| slot.id if slot.car && slot.car.registration_number == registration_number.downcase }.compact
-    return puts NO_CAR_FOUND_MESSAGE unless cars
+    return puts ParkingLot::NO_CAR_FOUND_MESSAGE if cars.empty?
     puts cars.join(", ")
   end
 
@@ -65,8 +65,3 @@ class ParkingLot < Base
   end
 
 end
-
-p = ParkingLot.new(5)
-p.park("KA-01-HH-1234", "White")
-p.park("KA-01-HH-1234", "White")
-puts p.slots.inspect

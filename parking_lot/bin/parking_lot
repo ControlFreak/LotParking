@@ -1,4 +1,4 @@
 #!/usr/bin/env ruby
-require './app/lib/parking_lot_handler'
+require '../app/lib/parking_lot_handler'
 
 ParkingLotHandler.new.run ARGV.first
