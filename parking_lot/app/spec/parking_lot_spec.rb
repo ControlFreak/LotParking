@@ -87,19 +87,90 @@ describe ParkingLot do
       parking_lot = ParkingLot.new(1)
     end
 
+    context "Parking Lot should have method defined as status" do
+      it {expect(parking_lot).to respond_to(:status)}
+    end
+
     context "when no car is park" do
       it {expect(parking_lot.status).to eq($stdout.puts PARKING_EMPTY_MESSAGE)}
     end
 
-    context "when cars are parked" do
-      it "should return slot with car registration number and color in tablular format" do
-        parking_lot.park("KA-01-HH-1234", "White")
-        expect(parking_lot.status).to end_with(<<-EOTXT
-Slot No.    Registration No    Colour
-1           KA-01-HH-1234      White
-                                      EOTXT )
+#     context "when cars are parked" do
+#       it "should return slot with car registration number and color in tablular format" do
+#         parking_lot.park("KA-01-HH-1234", "White")
+#         expect(parking_lot.status).to end_with(<<-EOTXT
+# Slot No.    Registration No    Colour
+# 1           KA-01-HH-1234      White
+#                                       EOTXT )
+#
+#       end
+#     end
+  end
 
-      end
+  describe '#registration_numbers_for_cars_with_colour' do
+    before :each do
+      parking_lot = ParkingLot.new(1)
+      parking_lot.park("KA-01-HH-1234", "White")
+    end
+
+    context "Parking Lot should have method defined as registration_numbers_for_cars_with_colour" do
+      it {expect(parking_lot).to respond_to(:registration_numbers_for_cars_with_colour)}
+    end
+
+    context "when registration_numbers_for_cars_with_colour is called with invalid arguments" do
+      it {expect(parking_lot.registration_numbers_for_cars_with_colour()).to raise_exception ArgumentError }
+      it {expect(parking_lot.registration_numbers_for_cars_with_colour(1)).to raise_exception ArgumentError }
+      it {expect(parking_lot.registration_numbers_for_cars_with_colour([])).to raise_exception ArgumentError }
+    end
+
+    context "when registration_numbers_for_cars_with_colour is called with correct arguments" do
+      it {expect(parking_lot.registration_numbers_for_cars_with_colour("White")).to eq($stdout.puts "KA-01-HH-1234" ) }
+      it {expect(parking_lot.registration_numbers_for_cars_with_colour("Black")).to eq($stdout.puts NO_CAR_FOUND_MESSAGE ) }
+    end
+
+  end
+
+  describe '#slot_numbers_for_cars_with_colour' do
+    before :each do
+      parking_lot = ParkingLot.new(1)
+      parking_lot.park("KA-01-HH-1234", "White")
+    end
+
+    context "Parking Lot should have method defined as slot_numbers_for_cars_with_colour" do
+      it {expect(parking_lot).to respond_to(:slot_numbers_for_cars_with_colour)}
+    end
+
+    context "when slot_numbers_for_cars_with_colour is called with invalid arguments" do
+      it {expect(parking_lot.slot_numbers_for_cars_with_colour()).to raise_exception ArgumentError }
+      it {expect(parking_lot.slot_numbers_for_cars_with_colour(1)).to raise_exception ArgumentError }
+      it {expect(parking_lot.slot_numbers_for_cars_with_colour([])).to raise_exception ArgumentError }
+    end
+
+    context "when registration_numbers_for_cars_with_colour is called with correct arguments" do
+      it {expect(parking_lot.slot_numbers_for_cars_with_colour("White")).to eq($stdout.puts "1" ) }
+      it {expect(parking_lot.slot_numbers_for_cars_with_colour("Black")).to eq($stdout.puts NO_CAR_FOUND_MESSAGE  ) }
+    end
+  end
+
+  describe '#slot_number_for_registration_number' do
+    before :each do
+      parking_lot = ParkingLot.new(1)
+      parking_lot.park("KA-01-HH-1234", "White")
+    end
+
+    context "Parking Lot should have method defined as slot_number_for_registration_number" do
+      it {expect(parking_lot).to respond_to(:slot_number_for_registration_number)}
+    end
+
+    context "when registration_numbers_for_cars_with_colour is called with invalid arguments" do
+      it {expect(parking_lot.slot_number_for_registration_number()).to raise_exception ArgumentError }
+      it {expect(parking_lot.slot_number_for_registration_number(1)).to raise_exception ArgumentError }
+      it {expect(parking_lot.slot_number_for_registration_number([])).to raise_exception ArgumentError }
+    end
+
+    context "when registration_numbers_for_cars_with_colour is called with correct arguments" do
+      it {expect(parking_lot.slot_number_for_registration_number("KA-01-HH-1234")).to eq($stdout.puts "1" ) }
+      it {expect(parking_lot.slot_number_for_registration_number("KA-01-MM-1234")).to eq($stdout.puts NO_CAR_FOUND_MESSAGE ) }
     end
   end
 
