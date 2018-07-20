@@ -14,7 +14,6 @@ class ParkingLot < Base
 
   def park(registration_number, color)
     raise ArgumentError unless registration_number.is_a?(String) || color.is_a?(String)
-
   end
 
   p = ParkingLot.new(5)

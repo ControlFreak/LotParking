@@ -8,5 +8,6 @@ class Base
   PARKING_EMPTY_MESSAGE = "Parking lot is empty"
   NO_CAR_FOUND_MESSAGE = "Not found"
   INVALID_ARGUMENT = "Invalid Argument, expect the argument to be #type#"
+  SLOT_OCCUPIED_MESSAGE = "Slot already occupied"
 
 end

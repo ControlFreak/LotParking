@@ -1,4 +1,5 @@
 require_relative './base'
+require_relative './car'
 
 class Slot < Base
 
@@ -10,6 +11,8 @@ class Slot < Base
   end
 
   def park(registration_number, color)
+    raise ArgumentError unless registration_number.is_a?(String) || color.is_a?(String)
+    raise StandardError.new(Slot::SLOT_OCCUPIED_MESSAGE) if self.car
 
   end
 

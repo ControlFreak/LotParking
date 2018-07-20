@@ -15,11 +15,11 @@ describe Car do
 
     context "when car is initialized with valid arguments" do
       before :each do
-        car = Car.new("KA-01-HH-1234", "White")
+        @car = Car.new("KA-01-HH-1234", "White")
       end
-      it {expect(car).to be_instance_of(Car) }
-      it {expect(car.registration_number).to eq("KA-01-HH-1234")}
-      it {expect(car.color).to eq("White")}
+      it {expect(@car).to be_instance_of(Car) }
+      it {expect(@car.registration_number).to eq("KA-01-HH-1234")}
+      it {expect(@car.color).to eq("White")}
     end
   end
 
