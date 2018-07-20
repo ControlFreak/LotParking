@@ -53,9 +53,36 @@ describe ParkingLot do
       it {expect(parking_lot.park("KA-01-HH-1234", "white")).to eq($stderr.puts PARKING_ALLOCATED_MESSAGE %{slot: 1})}
       it "should return parking full message if parking is full" do
         parking_lot.park("KA-01-HH-1234", "white")
-        expect(parking_lot.park("KA-01-HH-4321", "black")).to eq($stderr.puts PARKING_FULL_MESSAGE)
+        expect(parking_lot.park("KA-01-HH-4321", "black")).to eq($stdout.puts PARKING_FULL_MESSAGE)
       end
     end
+
+  end
+
+  describe '#leave' do
+    before :each do
+      parking_lot = ParkingLot.new(1)
+      parking_lot.park("KA-01-HH-1234", "white")
+    end
+
+    context "Parking Lot should have method defined as leave" do
+      it {expect(parking_lot).to respond_to(:leave)}
+    end
+
+    context "when leave is called on parking lot with invalid argument" do
+      it {expect(parking_lot.leave()).to raise_exception ArgumentError}
+      it {expect(parking_lot.leave("1")).to raise_exception ArgumentError}
+      it {expect(parking_lot.leave([1])).to raise_exception ArgumentError}
+      it {expect(parking_lot.leave(2)).to eq($stdout.puts INVALID_SLOT_MESSAGE)}
+    end
+
+    context "when leave is called with correct arguement" do
+      it {expect(parking_lot.leave(1)).to eq($stdout.puts PARKING_LEAVE_SLOT_MESSAGE %{slot: 1} )}
+    end
+
+  end
+
+  describe '#status' do
 
   end
 
