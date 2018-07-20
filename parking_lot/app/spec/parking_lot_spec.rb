@@ -49,7 +49,7 @@ describe ParkingLot do
     end
 
     context "when park is called with valid arguments i.e registration_number and color of car" do
-      it {expect(@parking_lot.park("KA-01-HH-1234", "white")).to eq($stderr.puts ParkingLot::PARKING_ALLOCATED_MESSAGE.gsub("#slot#", 1))}
+      it {expect(@parking_lot.park("KA-01-HH-1234", "white")).to eq($stderr.puts ParkingLot::PARKING_ALLOCATED_MESSAGE.gsub("#slot#", "1"))}
       it "should return parking full message if parking is full" do
         @parking_lot.park("KA-01-HH-1234", "white")
         expect(@parking_lot.park("KA-01-HH-4321", "black")).to eq($stdout.puts ParkingLot::PARKING_FULL_MESSAGE)
@@ -76,7 +76,7 @@ describe ParkingLot do
     end
 
     context "when leave is called with correct arguement" do
-      it {expect(@parking_lot.leave(1)).to eq($stdout.puts ParkingLot::PARKING_LEAVE_SLOT_MESSAGE.gsub("#slot#", 1))}
+      it {expect(@parking_lot.leave(1)).to eq($stdout.puts ParkingLot::PARKING_LEAVE_SLOT_MESSAGE.gsub("#slot#", "1"))}
     end
 
   end
