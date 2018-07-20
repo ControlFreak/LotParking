@@ -1,5 +1,4 @@
 require './lib/parking_lot'
-require './config/constant'
 
 describe ParkingLot do
 
@@ -40,20 +39,20 @@ describe ParkingLot do
     end
 
     context "when park is called without any arguments" do
-      it {expect(@parking_lot.park()).to raise_exception ArgumentError}
+      it {expect(lambda {@parking_lot.park()}).to raise_exception ArgumentError}
     end
 
     context "when park is called with invalid arguments" do
-      it {expect(@parking_lot.park(1, 2)).to raise_exception ArgumentError}
-      it {expect(@parking_lot.park("KA-01-HH-1234")).to raise_exception ArgumentError}
-      it {expect(@parking_lot.park([1, 2])).to raise_exception ArgumentError}
+      it {expect(lambda {@parking_lot.park(1, 2)}).to raise_exception ArgumentError}
+      it {expect(lambda {@parking_lot.park("KA-01-HH-1234")}).to raise_exception ArgumentError}
+      it {expect(lambda {@parking_lot.park([1, 2])}).to raise_exception ArgumentError}
     end
 
     context "when park is called with valid arguments i.e registration_number and color of car" do
-      it {expect(@parking_lot.park("KA-01-HH-1234", "white")).to eq($stderr.puts PARKING_ALLOCATED_MESSAGE %{slot: 1})}
+      it {expect(@parking_lot.park("KA-01-HH-1234", "white")).to eq($stderr.puts ParkingLot::PARKING_ALLOCATED_MESSAGE.gsub("#slot#", 1))}
       it "should return parking full message if parking is full" do
         @parking_lot.park("KA-01-HH-1234", "white")
-        expect(@parking_lot.park("KA-01-HH-4321", "black")).to eq($stdout.puts PARKING_FULL_MESSAGE)
+        expect(@parking_lot.park("KA-01-HH-4321", "black")).to eq($stdout.puts ParkingLot::PARKING_FULL_MESSAGE)
       end
     end
 
@@ -70,14 +69,14 @@ describe ParkingLot do
     end
 
     context "when leave is called on parking lot with invalid argument" do
-      it {expect(@parking_lot.leave()).to raise_exception ArgumentError}
-      it {expect(@parking_lot.leave("1")).to raise_exception ArgumentError}
-      it {expect(@parking_lot.leave([1])).to raise_exception ArgumentError}
-      it {expect(@parking_lot.leave(2)).to eq($stdout.puts INVALID_SLOT_MESSAGE)}
+      it {expect(lambda {@parking_lot.leave()}).to raise_exception ArgumentError}
+      it {expect(lambda {@parking_lot.leave("1")}).to raise_exception ArgumentError}
+      it {expect(lambda {@parking_lot.leave([1])}).to raise_exception ArgumentError}
+      it {expect(@parking_lot.leave(2)).to eq($stdout.puts ParkingLot::INVALID_SLOT_MESSAGE)}
     end
 
     context "when leave is called with correct arguement" do
-      it {expect(@parking_lot.leave(1)).to eq($stdout.puts PARKING_LEAVE_SLOT_MESSAGE %{slot: 1})}
+      it {expect(@parking_lot.leave(1)).to eq($stdout.puts ParkingLot::PARKING_LEAVE_SLOT_MESSAGE.gsub("#slot#", 1))}
     end
 
   end
@@ -92,7 +91,7 @@ describe ParkingLot do
     end
 
     context "when no car is park" do
-      it {expect(@parking_lot.status).to eq($stdout.puts PARKING_EMPTY_MESSAGE)}
+      it {expect(@parking_lot.status).to eq($stdout.puts ParkingLot::PARKING_EMPTY_MESSAGE)}
     end
 
 #     context "when cars are parked" do
@@ -118,14 +117,14 @@ describe ParkingLot do
     end
 
     context "when registration_numbers_for_cars_with_colour is called with invalid arguments" do
-      it {expect(@parking_lot.registration_numbers_for_cars_with_colour()).to raise_exception ArgumentError }
-      it {expect(@parking_lot.registration_numbers_for_cars_with_colour(1)).to raise_exception ArgumentError }
-      it {expect(@parking_lot.registration_numbers_for_cars_with_colour([])).to raise_exception ArgumentError }
+      it {expect(lambda {@parking_lot.registration_numbers_for_cars_with_colour()}).to raise_exception ArgumentError }
+      it {expect(lambda {@parking_lot.registration_numbers_for_cars_with_colour(1)}).to raise_exception ArgumentError }
+      it {expect(lambda {@parking_lot.registration_numbers_for_cars_with_colour([])}).to raise_exception ArgumentError }
     end
 
     context "when registration_numbers_for_cars_with_colour is called with correct arguments" do
       it {expect(@parking_lot.registration_numbers_for_cars_with_colour("White")).to eq($stdout.puts "KA-01-HH-1234" ) }
-      it {expect(@parking_lot.registration_numbers_for_cars_with_colour("Black")).to eq($stdout.puts NO_CAR_FOUND_MESSAGE ) }
+      it {expect(@parking_lot.registration_numbers_for_cars_with_colour("Black")).to eq($stdout.puts ParkingLot::NO_CAR_FOUND_MESSAGE ) }
     end
 
   end
@@ -141,14 +140,14 @@ describe ParkingLot do
     end
 
     context "when slot_numbers_for_cars_with_colour is called with invalid arguments" do
-      it {expect(@parking_lot.slot_numbers_for_cars_with_colour()).to raise_exception ArgumentError }
-      it {expect(@parking_lot.slot_numbers_for_cars_with_colour(1)).to raise_exception ArgumentError }
-      it {expect(@parking_lot.slot_numbers_for_cars_with_colour([])).to raise_exception ArgumentError }
+      it {expect(lambda {@parking_lot.slot_numbers_for_cars_with_colour()}).to raise_exception ArgumentError }
+      it {expect(lambda {@parking_lot.slot_numbers_for_cars_with_colour(1)}).to raise_exception ArgumentError }
+      it {expect(lambda {@parking_lot.slot_numbers_for_cars_with_colour([])}).to raise_exception ArgumentError }
     end
 
     context "when registration_numbers_for_cars_with_colour is called with correct arguments" do
       it {expect(@parking_lot.slot_numbers_for_cars_with_colour("White")).to eq($stdout.puts "1" ) }
-      it {expect(@parking_lot.slot_numbers_for_cars_with_colour("Black")).to eq($stdout.puts NO_CAR_FOUND_MESSAGE  ) }
+      it {expect(@parking_lot.slot_numbers_for_cars_with_colour("Black")).to eq($stdout.puts ParkingLot::NO_CAR_FOUND_MESSAGE  ) }
     end
   end
 
@@ -163,14 +162,14 @@ describe ParkingLot do
     end
 
     context "when registration_numbers_for_cars_with_colour is called with invalid arguments" do
-      it {expect(@parking_lot.slot_number_for_registration_number()).to raise_exception ArgumentError }
-      it {expect(@parking_lot.slot_number_for_registration_number(1)).to raise_exception ArgumentError }
-      it {expect(@parking_lot.slot_number_for_registration_number([])).to raise_exception ArgumentError }
+      it {expect(lambda {@parking_lot.slot_number_for_registration_number()}).to raise_exception ArgumentError }
+      it {expect(lambda {@parking_lot.slot_number_for_registration_number(1)}).to raise_exception ArgumentError }
+      it {expect(lambda {@parking_lot.slot_number_for_registration_number([])}).to raise_exception ArgumentError }
     end
 
     context "when registration_numbers_for_cars_with_colour is called with correct arguments" do
       it {expect(@parking_lot.slot_number_for_registration_number("KA-01-HH-1234")).to eq($stdout.puts "1" ) }
-      it {expect(@parking_lot.slot_number_for_registration_number("KA-01-MM-1234")).to eq($stdout.puts NO_CAR_FOUND_MESSAGE ) }
+      it {expect(@parking_lot.slot_number_for_registration_number("KA-01-MM-1234")).to eq($stdout.puts ParkingLot::NO_CAR_FOUND_MESSAGE ) }
     end
   end
 

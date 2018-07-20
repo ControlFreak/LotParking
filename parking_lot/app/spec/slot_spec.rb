@@ -23,4 +23,20 @@ describe Slot do
 
   end
 
+  before :each do
+    slot = Slot.new(1)
+  end
+
+  describe '#park' do
+
+  end
+
+  describe '#unpark' do
+
+  end
+
+  describe '#is_vacant?' do
+
+  end
+
 end
