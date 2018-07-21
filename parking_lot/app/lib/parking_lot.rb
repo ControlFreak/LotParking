@@ -33,7 +33,7 @@ class ParkingLot < Base
   def status
     puts "Slot No.\t Registration Number\t Colour"
     slots.each do |slot|
-      puts "#{ slot.id }\t\t\t #{ slot.car.registration_number.upcase }\t\t\t #{ slot.car.color.capitalize }" unless (slot.is_vacant?)
+      puts "#{ slot.id }\t\t #{ slot.car.registration_number.upcase }\t\t #{ slot.car.color.capitalize }" unless (slot.is_vacant?)
     end
   end
 

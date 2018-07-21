@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc960741-c722-4740-9cc9-4e64822db531" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parking_lot/app/lib/base.rb" afterPath="$PROJECT_DIR$/parking_lot/app/lib/base.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parking_lot/app/lib/parking_lot.rb" afterPath="$PROJECT_DIR$/parking_lot/app/lib/parking_lot.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parking_lot/app/lib/parking_lot_handler.rb" afterPath="$PROJECT_DIR$/parking_lot/app/lib/parking_lot_handler.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parking_lot/bin/parking_lot" afterPath="$PROJECT_DIR$/parking_lot/bin/parking_lot" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -49,21 +47,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="parking_lot.rb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="parking_lot.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/parking_lot/app/lib/parking_lot.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="54" column="64" lean-forward="true" selection-start-line="54" selection-start-column="64" selection-end-line="54" selection-end-column="64" />
+            <state relative-caret-position="275">
+              <caret line="35" column="73" lean-forward="false" selection-start-line="35" selection-start-column="73" selection-end-line="35" selection-end-column="73" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="file_input.txt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="file_input.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/parking_lot/functional_spec/fixtures/file_input.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
-              <caret line="11" column="47" lean-forward="false" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="47" />
+              <caret line="11" column="47" lean-forward="false" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -160,8 +158,8 @@
         <option value="$PROJECT_DIR$/parking_lot/bin/parking_lot" />
         <option value="$PROJECT_DIR$/parking_lot/app/lib/base.rb" />
         <option value="$PROJECT_DIR$/parking_lot/app/lib/parking_lot_handler.rb" />
-        <option value="$PROJECT_DIR$/parking_lot/app/lib/parking_lot.rb" />
         <option value="$PROJECT_DIR$/parking_lot/functional_spec/fixtures/file_input.txt" />
+        <option value="$PROJECT_DIR$/parking_lot/app/lib/parking_lot.rb" />
       </list>
     </option>
   </component>
@@ -209,53 +207,6 @@
               <item name="parking-lot-1.3.0" type="462c0819:PsiDirectoryNode" />
               <item name="parking_lot" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="parking-lot-1.3.0" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parking-lot-1.3.0" type="462c0819:PsiDirectoryNode" />
-              <item name="parking_lot" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="parking-lot-1.3.0" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parking-lot-1.3.0" type="462c0819:PsiDirectoryNode" />
-              <item name="parking_lot" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="spec" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="parking-lot-1.3.0" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parking-lot-1.3.0" type="462c0819:PsiDirectoryNode" />
-              <item name="parking_lot" type="462c0819:PsiDirectoryNode" />
-              <item name="bin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="parking-lot-1.3.0" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parking-lot-1.3.0" type="462c0819:PsiDirectoryNode" />
-              <item name="parking_lot" type="462c0819:PsiDirectoryNode" />
-              <item name="functional_spec" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="parking-lot-1.3.0" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parking-lot-1.3.0" type="462c0819:PsiDirectoryNode" />
-              <item name="parking_lot" type="462c0819:PsiDirectoryNode" />
-              <item name="functional_spec" type="462c0819:PsiDirectoryNode" />
-              <item name="fixtures" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="parking-lot-1.3.0" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parking-lot-1.3.0" type="462c0819:PsiDirectoryNode" />
-              <item name="parking_lot" type="462c0819:PsiDirectoryNode" />
-              <item name="functional_spec" type="462c0819:PsiDirectoryNode" />
-              <item name="spec" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="parking-lot-1.3.0" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parking-lot-1.3.0" type="462c0819:PsiDirectoryNode" />
-              <item name="parking_lot" type="462c0819:PsiDirectoryNode" />
-              <item name="functional_spec" type="462c0819:PsiDirectoryNode" />
-              <item name="tmp" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -325,12 +276,12 @@
       <updated>1532022586853</updated>
       <workItem from="1532022588552" duration="58000" />
       <workItem from="1532022697985" duration="20382000" />
-      <workItem from="1532093292117" duration="13355000" />
+      <workItem from="1532093292117" duration="13747000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33795000" />
+    <option name="totallyTimeSpent" value="34187000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -634,18 +585,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/parking_lot/app/lib/parking_lot.rb">
+    <entry file="file://$PROJECT_DIR$/parking_lot/functional_spec/fixtures/file_input.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="54" column="64" lean-forward="true" selection-start-line="54" selection-start-column="64" selection-end-line="54" selection-end-column="64" />
+        <state relative-caret-position="165">
+          <caret line="11" column="47" lean-forward="false" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/parking_lot/functional_spec/fixtures/file_input.txt">
+    <entry file="file://$PROJECT_DIR$/parking_lot/app/lib/parking_lot.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="47" lean-forward="false" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="47" />
+        <state relative-caret-position="275">
+          <caret line="35" column="73" lean-forward="false" selection-start-line="35" selection-start-column="73" selection-end-line="35" selection-end-column="73" />
           <folding />
         </state>
       </provider>
