@@ -9,15 +9,6 @@ require 'open3'
 # should Just Work.
 
 
-# install ruby 2.4.1 with
-# create gemset
-# install bundler
-# do bundle install
-
-
-
-
-
 # puts "gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB"
 # system "gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB"
 # puts "\curl -sSL https://get.rvm.io | bash -s stable --ruby=2.4.1"
